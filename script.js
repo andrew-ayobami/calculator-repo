@@ -91,13 +91,14 @@ modulo.addEventListener('click', (e) => {
   }
 });
 
-// DELETE VALUES AND RECALCULATE 
+// DELETE ALL VALUES ON SCREEN AND IN THE EXPRESSION 
 deleteAllButton.addEventListener('click', () => {
    sumContainer.textContent = '';
    variable = "";
    total.textContent = '0';
 });
 
+// DELETE LAST VALUE AND RECALCULATE
 deleteButton.addEventListener('click', () => {
   sumContainer.textContent = sumContainer.textContent.slice(0, -1);
   variable = sumContainer.textContent;
