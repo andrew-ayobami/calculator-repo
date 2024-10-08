@@ -13,11 +13,6 @@
     align-items: center;
   }
   
-  .digit svg {
-    color: white;
-    width: 25px;
-  }
-  
   .container {
     background-color: #35374B;
     display: flex;
@@ -63,8 +58,13 @@
     cursor: pointer;
   }
   
+  .digit svg {
+    width: 25px;
+  }
+  
   span {
     outline: 1px solid gray;
+    color: rgb(255, 255, 255);
   }
   
   #equal-sign {
@@ -75,4 +75,13 @@
     max-height: 70px;
     padding: .1em;
     width: auto;
+  }
+
+  #equal-sign:hover {
+    background-color: hsl(22, 100%, 75%);
+  }
+
+  .digit:hover{
+    background-color: hsl(235, 17%, 20%);
+    transition: .3s;
   }
